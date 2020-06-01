@@ -17,7 +17,6 @@ export const counter = (state = initialCounter, action) => {
 export const textInput = (state = initialTextInput, action) => {
   switch (action.type) {
     case UPDATE:
-    console.log(action);
       return (state = action.value);
     default:
       return state;
